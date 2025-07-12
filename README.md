@@ -136,6 +136,37 @@ SerialInst.port = '/dev/ttyACM0'  # or COM3 on Windows
 
 ---
 
+## 🔌 How to Use
+
+1. **Prepare Your Arduino**  
+   - Write your own Arduino logic, or start with the provided sample.
+   - Upload the code using the Arduino IDE.
+
+2. **Configure Serial Port**
+   - Open `shell_scripts.py`.
+   - Set your Arduino port, e.g.:
+     ```python
+     SerialInst.port = '/dev/ttyACM0'  # or 'COM3' for Windows
+     ```
+
+3. **Customize System Instructions**
+   - Open `main.py`.
+   - Edit the system prompt (starting with `system_instruction=f"""..."""`) to match your hardware and logic.
+
+4. **Run the Program**
+   ```bash
+   python3 main.py
+   ```
+
+5. **Speak Naturally**
+   - Ask your assistant things like:
+     - “Turn on the lights”
+     - “Blink the LED five times quickly”
+     - “What’s the temperature?”
+     - “Rotate the motor by 45 degrees”
+
+---
+
 ## 🎙️ Example Usage
 
 | You Say                          | AI Responds       | Arduino Receives |
